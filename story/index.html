@@ -11,7 +11,7 @@
 <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
 <style>
   :root{
-    --midnight:#0E1230; --dawn:#FF6A3D; --cloud:#F6F5F2; --ash:#6B7180;
+    --midnight:#0E1230; --dawn:#FF6A3D; --amber:#FFB65C; --cloud:#F6F5F2; --ash:#6B7180;
     --kr:'Pretendard Variable','Pretendard','Noto Sans KR',sans-serif;
     --en:'Montserrat',sans-serif;
   }
@@ -71,7 +71,7 @@
   .horizon{position:absolute;left:0;right:0;bottom:0;height:34vh;pointer-events:none;z-index:1}
   .horizon .glow{position:absolute;inset:0;background:linear-gradient(to top,rgba(255,106,61,.34),rgba(255,196,107,.08) 55%,transparent)}
   .horizon .curve{position:absolute;left:-6%;right:-6%;bottom:-9vh;height:14vh;background:var(--midnight);border-radius:100% 100% 0 0/100% 100% 0 0}
-  .horizon .sun{position:absolute;left:50%;bottom:2.5vh;transform:translateX(-50%);width:9vh;height:9vh;border-radius:50%;background:linear-gradient(to bottom,#FFC46B,#FF6A3D);opacity:.9;filter:blur(1.5px)}
+  .horizon .sun{position:absolute;left:50%;bottom:1vh;transform:translateX(-50%);width:200px;height:200px;max-width:52vw;border-radius:50%;background:radial-gradient(circle at 50% 40%,var(--amber),var(--dawn) 70%);opacity:.9}
 
   .pgnum{position:absolute;bottom:26px;left:50%;transform:translateX(-50%);font-family:var(--en);font-size:9.5px;letter-spacing:.3em;color:rgba(255,255,255,.24);z-index:3}
 </style>
