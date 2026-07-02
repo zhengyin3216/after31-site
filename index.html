@@ -61,8 +61,11 @@
   .lead .soft{font-weight:300;color:rgba(255,255,255,.7)}
 
   /* products */
-  .prodgrid{margin-top:56px;display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px}
-  .card{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);border-radius:20px;padding:32px 26px;transition:.2s}
+  .prodgrid{margin-top:48px;display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:28px}
+  .card{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);border-radius:20px;padding:24px 22px 30px;transition:.2s;text-align:center}
+  .card .shot{aspect-ratio:1/2;width:100%;max-width:220px;margin:0 auto 22px;border-radius:16px;overflow:hidden;background:#0b0e26;border:1px solid rgba(255,255,255,.09);box-shadow:0 14px 34px rgba(0,0,0,.45)}
+  .card .shot img{width:100%;height:100%;object-fit:cover;object-position:top center;display:block}
+  .ch{display:inline-block;margin-left:6px;font-family:var(--kr);font-size:10px;font-weight:700;letter-spacing:0;color:#0E1230;background:var(--amber);border-radius:999px;padding:2px 8px;vertical-align:middle;text-transform:none}
   .card:hover{border-color:rgba(255,106,61,.5);transform:translateY(-3px);background:rgba(255,255,255,.06)}
   .card .cat{font-size:13px;font-weight:600;letter-spacing:.14em;color:var(--dawn);text-transform:uppercase;font-family:var(--en)}
   .card .nm{margin-top:12px;font-size:26px;font-weight:800;letter-spacing:.01em}
@@ -148,31 +151,36 @@
       <div class="center">
         <div class="eyebrow">What We Build</div>
         <div class="lead"><span class="soft">작은 불편에서 시작한</span><br />네 개의 제품.</div>
+        <p style="margin-top:16px;font-size:14px;color:rgba(255,255,255,.5)">토스와 웹에서 지금 바로 만나보세요.</p>
       </div>
       <div class="prodgrid">
         <div class="card">
-          <div class="cat">Care · 돌봄</div>
+          <div class="shot"><img src="./assets/shot-carenote.png" alt="CareNote 앱 화면" loading="lazy" /></div>
+          <div class="cat">Care · 돌봄 <span class="ch">토스</span></div>
           <div class="nm">CareNote</div>
           <div class="desc">가족의 건강을<br />기록하고 이해하도록 돕습니다.</div>
-          <a class="detail" href="https://minion.toss.im/13JFgYI" target="_blank" rel="noopener">토스에서 바로 체험 →</a>
+          <a class="detail" href="https://minion.toss.im/13JFgYI" target="_blank" rel="noopener">체험하기 →</a>
         </div>
         <div class="card">
+          <div class="shot"><img src="./assets/shot-fitnote.png" alt="FitNote 앱 화면" loading="lazy" /></div>
           <div class="cat">Fitness · 운동</div>
           <div class="nm">FitNote</div>
           <div class="desc">혼자서도<br />운동을 이어가도록 돕습니다.</div>
           <a class="detail" href="https://fitnote-bice.vercel.app/" target="_blank" rel="noopener">체험하기 →</a>
         </div>
         <div class="card">
+          <div class="shot"><img src="./assets/shot-hnote.png" alt="HairNote 앱 화면" loading="lazy" /></div>
           <div class="cat">Beauty · 미용</div>
           <div class="nm">HairNote</div>
           <div class="desc">더 정확한<br />미용 상담을 돕습니다.</div>
           <a class="detail" href="https://hnote-one.vercel.app/" target="_blank" rel="noopener">체험하기 →</a>
         </div>
         <div class="card">
-          <div class="cat">Parenting · 육아</div>
+          <div class="shot"><img src="./assets/shot-ttubagi.png" alt="뚜벅이육아 앱 화면" loading="lazy" /></div>
+          <div class="cat">Parenting · 육아 <span class="ch">토스</span></div>
           <div class="nm">뚜벅이육아</div>
           <div class="desc">아이와 갈 곳을<br />쉽게 찾도록 돕습니다.</div>
-          <a class="detail" href="https://minion.toss.im/H354XW6t" target="_blank" rel="noopener">토스에서 바로 체험 →</a>
+          <a class="detail" href="https://minion.toss.im/H354XW6t" target="_blank" rel="noopener">체험하기 →</a>
         </div>
       </div>
     </div>
